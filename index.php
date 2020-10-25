@@ -52,8 +52,11 @@ include 'logics/login1.php';
 						<div class="col-md-2">
 							
 						</div>
-						<div class="col-md-10">
-							<button class= "btn btn-success" href="" name="login">Sign in</button>
+						<div class="col-md-5">
+							<button class= "btn btn-success" href="" name="login">Sign In</button>
+						</div>
+						<div class="col-md-5">
+							<button class= "btn btn-info" href="" name="signup">Sign Up</button>
 						</div>
 					</div>
 				</form>
@@ -61,30 +64,4 @@ include 'logics/login1.php';
 		</div>
 	</div>
 </body>
-<!--
-<?php
-
-	include 'core/init.php';
-
-	if(isset($_POST['login'])){
-		$uname = $_POST['uname'];
-		$pword = $_POST['password'];
-
-
-/** PHP Code for Selection from the Database **/
-$select = $db->query("SELECT * FROM `information` WHERE `username` = '$uname' AND `password` = '$pword'");
-		if(mysqli_num_rows($select) > 0){
-			while($rows = mysqli_fetch_array($select)){
-				if($rows['username'] == "$uname" && $rows['password'] == "$pword"){
-					$_SESSION['id'] = $rows['id'];
-					echo "<script>window.open('index.php','_self')</script>";
-				}
-				else {
-					
-				}
-			}
-		}
-	}
-?>
--->
 </html>

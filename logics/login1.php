@@ -23,4 +23,8 @@ $select = $db->query("SELECT * FROM `information` WHERE `username` = '$uname' AN
 			}
 		}
 	}
+
+	if(isset($_POST['signup'])){
+		echo "<script>window.open('registration.php', '_self')</script>";
+	}
 ?>
