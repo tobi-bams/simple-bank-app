@@ -15,7 +15,7 @@ $select = $db->query("SELECT * FROM `information` WHERE `username` = '$uname' AN
 			while($rows = mysqli_fetch_array($select)){
 				if($rows['username'] == "$uname" && $rows['password'] == "$pword"){
 					$_SESSION['id'] = $rows['id'];
-					echo "<script>window.open('index.php','_self')</script>";
+					echo "<script>window.open('home.php','_self')</script>";
 				}
 				else {
 					
