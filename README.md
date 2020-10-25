@@ -8,5 +8,5 @@ This simple bank is built with PHP and has three basic feature
 1. Make sure you have a PHP local server active on your local machine
 2. You fork the repository to your personal repository.
 3. You Clone the repository to your local machine basically inside your server
-4. You could import the database from the database file
+4. You could import the database from the database file in the database directory
 5. You then run the following command in your browser `localhost/bank`
